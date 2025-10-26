@@ -12,8 +12,8 @@ jobs:
       - name: Sync to HF Hub
         uses: huggingface/hub-action@v1
         with:
-          repo-token: ${{ secrets.HF_TOKEN   }}
-          repo-id: TU_USUARIO/TU_NOMBRE_SPACE  # <--- ¡IMPORTANTE! Reemplacen esto
+          repo-token: ${{ secrets.UGGING_FACE_TOKEN }}
+          repo-id: martn37/proyecto_agro  # <--- ¡IMPORTANTE! Reemplacen esto
           # Esto empuja el contenido del repo de GitHub al Space
           lfs: true # Incluir si usan archivos grandes (modelos, datos)
 
