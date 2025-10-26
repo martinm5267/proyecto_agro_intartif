@@ -11,7 +11,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Sync to HF Hub
-        uses: huggingface/hub-action@v1
+        #   uses: huggingface/hub-action@v1
+        uses: huggingface/hub@v1
+        
         with:
           repo-token: ${{ secrets.UGGING_FACE_TOKEN    }}
           repo-id: martn37/proyecto_agro
