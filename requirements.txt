@@ -3,6 +3,7 @@
 gradio
 Pillow
 numpy
+timm
 transformers
 torch # transformers a menudo requiere torch o tensorflow
 
