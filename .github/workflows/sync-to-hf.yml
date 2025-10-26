@@ -2,20 +2,21 @@
 name: Sync to Hugging Face Hub
 on:
   push:
-    branches: [main] #  'master' si esa es su rama principal
+    branches: [main]
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Sync to HF Hub
-        uses: huggingface/actions/hub-action@v1
+        uses: huggingface/hub-action@v1
         with:
-          repo-token: ${{ secrets.UGGING_FACE_TOKEN }}
-          repo-id: martn37/proyecto_agro  # <--- ¡IMPORTANTE! Reemplacen esto
-          # Esto empuja el contenido del repo de GitHub al Space
-          lfs: true # Incluir si usan archivos grandes (modelos, datos)
+          repo-token: ${{ secrets.UGGING_FACE_TOKEN    }}
+          repo-id: martn37/proyecto_agro
+
+          
 
 
 
