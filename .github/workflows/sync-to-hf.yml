@@ -20,6 +20,7 @@ jobs:
         
         with:
           repo-token: ${{ secrets.UGGING_FACE_TOKEN    }}
+          repo-token: ${{ secrets.HF_TOKEN }}
           repo-id: martn37/proyecto_agro
 
           
