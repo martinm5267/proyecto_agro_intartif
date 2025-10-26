@@ -148,7 +148,7 @@ interfaz = gr.Interface(
         gr.Image(type="pil", label="Imagen con fruta detectada"), # Salida para la imagen con recuadro
         "text" # Salida para el texto de resultados
     ],
-    title="Detector y Clasificador de Frutas (MVP Agro)",  # Título de la interfaz
+    title="Clasificador de Frutas (MVP Agro)",  # Título de la interfaz
     description="Sube una foto de una fruta (idealmente una manzana) y la IA intentará detectarla y clasificarla usando mobilevit-small." # Descripción
 )
 
