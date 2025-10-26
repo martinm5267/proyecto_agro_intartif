@@ -1,0 +1,17 @@
+
+
+gradio
+Pillow
+numpy
+transformers
+torch # transformers a menudo requiere torch o tensorflow
+
+
+
+
+
+
+
+
+
+
