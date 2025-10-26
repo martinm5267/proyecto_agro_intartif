@@ -1,28 +1,24 @@
-
+          
 name: Sync to Hugging Face Hub
 on:
   push:
-    branches: [main]
+    branches: [main] # O 'master' si esa es su rama principal
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        # uses: huggingface/actions/hub-action@v1 # Usar la acción oficial y versión v1
 
       - name: Sync to HF Hub
-        #   uses: huggingface/hub-action@v1
-        # uses: huggingface/hub@v1
-        # uses: huggingface/hub-action@main
-        uses: huggingface/actions/hub-action@v1 # Usar la acción oficial y versión v1
-        
-        with:
-          # repo-token: ${{ secrets.UGGING_FACE_TOKEN    }}
-          repo-token: ${{ secrets.HF_TOKEN }}
-          repo-id: martn37/proyecto_agro
+        uses: huggingface/actions/hub-action@v1 # Acción oficial de Hugging Face Hub
 
-          
+        with:
+          repo-token: ${{ secrets.HF_TOKEN }} # Nombre del secreto en GitHub
+          repo-id: martn37/proyecto_agro # Su ID de Space en Hugging Face
+
+
+
 
 
 
