@@ -19,7 +19,7 @@ jobs:
         uses: huggingface/actions/hub-action@v1 # Usar la acción oficial y versión v1
         
         with:
-          repo-token: ${{ secrets.UGGING_FACE_TOKEN    }}
+          # repo-token: ${{ secrets.UGGING_FACE_TOKEN    }}
           repo-token: ${{ secrets.HF_TOKEN }}
           repo-id: martn37/proyecto_agro
 
