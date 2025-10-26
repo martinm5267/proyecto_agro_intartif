@@ -10,7 +10,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Sync to HF Hub
-        uses: huggingface/actions/hub-action@v1 # Acción oficial de Hugging Face Hub
+        # uses: huggingface/actions/hub-action@v1 # Acción oficial de Hugging Face Hub
+        uses: huggingface/actions/hub-action@v2
 
         with:
           repo-token: ${{ secrets.HF_TOKEN }} # Nombre del secreto en GitHub
