@@ -54,23 +54,28 @@ Puedes acceder a la aplicación desplegada públicamente en Hugging Face Spaces 
 - Python **3.12** (versión utilizada en el entorno de desarrollo)
 - Git
 
-###  Instrucciones instalación
-Clonar el repositorio desde GitHub:
+##  Instrucciones instalación
+##   Clonar el repositorio desde GitHub:
 
 
-Clonar el repositorio: git clone https://github.com/martinm5267/proyecto_agro_intartif.git
+ Clonar el repositorio: git clone https://github.com/martinm5267/proyecto_agro_intartif.git
+
     Navegar al directorio donde se va a guardar el proyecto, por ejemplo: 
+    
     cd proyecto_agro_intartif 
-    Crear y activar entorno virtual: 
-python -m venv venv, source venv/bin/activate (Linux/macOS), 
-venv\Scripts\activate (Windows) 
+    
+##  Crear y activar entorno virtual:
+
+python -m venv venv, source venv/bin/activate (Linux/macOS)
+ venv\Scripts\activate (Windows) 
+
 Estos son los comandos estándar para crear y activar un entorno virtual con venv en Python, cubriendo los diferentes sistemas operativos.
     
-    Instalar dependencias: 
+##  Instalar dependencias: 
 pip install -r requirements.txt 
 Este es el comando estándar para instalar todas las librerías listadas en requirements.txt.
 
-Ejecutar la aplicación: python app.py
+## Ejecutar la aplicación: python app.py
  Este es el comando estándar para ejecutar un script Python llamado app.py.
 
 
