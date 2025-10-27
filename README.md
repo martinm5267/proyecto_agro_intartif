@@ -79,7 +79,26 @@ Este es el comando estándar para instalar todas las librerías listadas en requ
  Este es el comando estándar para ejecutar un script Python llamado app.py.
 
 
+## Ideas para Posibles Mejoras Futuras:
 
+    ## Clasificación de Múltiples Frutas: Modificar la lógica para clasificar todas las frutas relevantes en una imagen, no solo la de mayor área.
+    
+    ## Soporte para Otras Frutas o Cultivos: Ampliar el alcance clasificar diferentes tipos de frutas (peras, naranjas, etc.) o incluso pasar a la clasificación de problemas en otros cultivos (hoja, plagas). Esto requeriría modelos entrenados en esos nuevos datos.
+    
+    ## Clasificación por Madurez o Calidad: En lugar de (o además de) la variedad, clasificar la fruta por su estado de madurez (verde, pintón, maduro) o calidad (con/sin defectos). Esto necesitaría un modelo entrenado específicamente para esas clases.
+    
+    ## Análisis de Defectos: Clasificar problemas específicos en la superficie de la fruta (manchas, golpes, signos de plagas). Esto podría usar técnicas para identificación de objetos o segmentación.
+
+    ## Integración con Base de Conocimiento (RAG simple): Basado en la variedad o el estado, consultar una pequeña base de datos o documentos (usando RAG) para proporcionar información adicional relevante (ej: descripción de la variedad, usos recomendados, condiciones de almacenamiento, tratamientos básicos si se encuentra un problema).
+    
+    ## Interfaz de Chat Multimodal: Permitir al usuario subir la imagen y escribir texto para dar contexto (ej: "Esta es una manzana de mi árbol, tiene estas manchas, ¿qué podría ser?"). Esto requeriría un Vision LLM o combinar el análisis visual con un LLM.
+
+    ## Historial de Consultas: Permitir a los usuarios (quizás con un sistema de autenticación simple) guardar un historial de las imágenes que han subido y los resultados obtenidos.
+    ## Geolocalización y Contexto Climático: Si fuera relevante, integrar información de la ubicación o el clima reciente para contextualizar el diagnóstico o la recomendación.
+    
+    ## Mejora de la Interfaz de Usuario: Pulir la interfaz de Gradio o considerar migrar a Streamlit si se necesitan layouts más complejos, múltiples páginas o visualizaciones de datos.
+     
+    ## Optimización del Modelo: Explorar técnicas para hacer la inferencia más rápida, cuantización del modelo, usar modelos más ligeros especialmente.
 
 
 
